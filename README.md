@@ -4,17 +4,17 @@ Try the Ultimate OpenXR Template by **Alex Coulombe Presents** in your Android
 headset. This repository distributes the playable demo, screenshots and test
 notes. The Unreal project and template source remain private.
 
-**[Download the preview APK](https://github.com/ibrews/uoxr-demo/releases/tag/preview-2026-10-10)**
+**[Download the preview APK](https://github.com/ibrews/uoxr-demo/releases/tag/preview-2026-10-12)**
 · [Project page and simulator videos](https://alexcoulombepresents.com/lab/ultimate-openxr-template)
 
 ![The tutorial gallery](media/gallery-preview.jpg)
 
 ## Quickstart
 
-1. Download `UOXR-Preview-Android.apk` from the release assets.
+1. Download `UOXR-Preview-Android-build3.apk` from the release assets.
 2. Enable your headset's developer mode and install with its sideloading tool.
-   If you use Android platform tools: `adb install -r UOXR-Preview-Android.apk`.
-3. Launch **UOXR Preview** from your headset's applications/unknown-sources list.
+   If you use Android platform tools: `adb install -r UOXR-Preview-Android-build3.apk`.
+3. Launch **UOXR Template** from your headset's applications/unknown-sources list.
    The separate application ID, `com.alexcoulombepresents.uoxrdemo`, preserves
    existing UOXR Template installations.
 4. Open settings with **B/Y** on a controller, or hold **both thumb–index pinches
@@ -22,7 +22,7 @@ notes. The Unreal project and template source remain private.
    Keyboard: **Tab**. Gamepad: **Start**.
 
 This is a development-signed evaluation preview for Android OpenXR headsets, using
-arm64, Vulkan and ASTC, with Android 12L/API 32 or newer required for build 1.
+arm64, Vulkan and ASTC, with Android 12L/API 32 or newer required for build 3.
 It is not a phone app or a store-certified release. An APK
 cannot run on PCVR or Apple Vision Pro. Compatibility on untested headsets remains
 unknown; include your model and OS version when reporting a problem.
@@ -57,11 +57,29 @@ pinches through all four map destinations. Stereo captures exercised 80%/2x MSAA
 behavior on the host, not standalone headset performance. Exact-APK checks and
 known limitations are listed in each release.
 
-Build 1's exact APK was installed by SHA-256 and rendered the tutorial in PICO
-Emulator 0.13. Physical Quest, PICO and Android XR acceptance of this new build is
-pending. **VIVE Focus 3 is not supported by build 1:** its current firmware runs
-Android 10/API 29. A separate compatibility experiment installs there but fails
-the visual check, so it is not distributed here.
+Build 3's exact APK was installed by SHA-256 and rendered the Tutorial in PICO
+Emulator 0.13; its installed bytes were pulled and matched independently. Fresh
+native simulator tests passed controller/hand switching 7/7, controller models 7/7
+and hand-menu 18/18. Controller grips completed the labs and the full power puzzle.
+Physical fit, stereo comfort and sustained headset performance remain pending.
+**VIVE Focus3/API29 is not supported by this API32 APK.**
+
+## Simulator walkthrough
+
+[![Watch the 59-second simulator tour](media/simulator-walkthrough-landscape.jpg)](https://github.com/ibrews/uoxr-demo/releases/download/preview-2026-10-12/UOXR-Simulator-Walkthrough-landscape-2026-10-12.mp4)
+
+Hands, controller models, comfort menus, flight, teleport, grabbing, doors and a
+complete power puzzle, recorded in Meta XR Simulator and xrsim. The final shot
+shows the packaged APK in PICO Emulator. Simulator windows and labels stay visible.
+The source remains private.
+
+- [Watch/download landscape](https://github.com/ibrews/uoxr-demo/releases/download/preview-2026-10-12/UOXR-Simulator-Walkthrough-landscape-2026-10-12.mp4)
+- [Watch/download portrait](https://github.com/ibrews/uoxr-demo/releases/download/preview-2026-10-12/UOXR-Simulator-Walkthrough-portrait-2026-10-12.mp4)
+- [Captions and suggested social caption](https://github.com/ibrews/uoxr-demo/releases/tag/preview-2026-10-12) are included in the release.
+
+Model previews show Quest/Focus/PICO appearances in Meta runtime, rather than
+claiming physical tests of those devices. The video has original music and
+burned-in captions; gameplay audio and haptic feel were not captured.
 
 ## Feedback
 
