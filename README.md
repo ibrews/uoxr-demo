@@ -64,7 +64,28 @@ and hand-menu 18/18. Controller grips completed the labs and the full power puzz
 Physical fit, stereo comfort and sustained headset performance remain pending.
 **VIVE Focus3/API29 is not supported by this API32 APK.**
 
-## Simulator walkthrough
+## Full feature trailer — 1m 52s
+
+[![Watch the UOXR feature trailer](media/feature-trailer-landscape.jpg)](https://github.com/ibrews/uoxr-demo/releases/download/media-2026-10-18/UOXR-Feature-Trailer-landscape-2026-10-18.mp4)
+
+Hands, controllers, comfort, walking, flight, teleport and dash. Grab and place
+physics props, retry with a coral reset ball, open doors and power a complete
+workshop puzzle. Four sample rooms, desktop input and a final Android emulator
+shot, recorded at normal speed with simulator labels and window chrome visible.
+
+- [Landscape 1080p](https://github.com/ibrews/uoxr-demo/releases/download/media-2026-10-18/UOXR-Feature-Trailer-landscape-2026-10-18.mp4)
+- [Portrait 1080×1920](https://github.com/ibrews/uoxr-demo/releases/download/media-2026-10-18/UOXR-Feature-Trailer-portrait-2026-10-18.mp4)
+- [Five GIFs, posters, chapter captions, social copy and hashes](https://github.com/ibrews/uoxr-demo/releases/tag/media-2026-10-18)
+
+![Lift and release the coral reset ball](media/reset-ball.gif)
+![Power the workshop machine](media/power-workshop.gif)
+
+This is footage from the latest QA work, including newer reset balls and input
+repairs. The Android download above remains the earlier **build 3** preview while
+the new candidate completes QA. These recordings do not certify physical-headset
+compatibility or sustained mobile performance. Source remains private.
+
+## Earlier 59-second walkthrough
 
 [![Watch the 59-second simulator tour](media/simulator-walkthrough-landscape.jpg)](https://github.com/ibrews/uoxr-demo/releases/download/preview-2026-10-12/UOXR-Simulator-Walkthrough-landscape-2026-10-12.mp4)
 
