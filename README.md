@@ -4,16 +4,16 @@ Try the Ultimate OpenXR Template by **Alex Coulombe Presents** in your Android
 headset. This repository distributes the playable demo, screenshots and test
 notes. The Unreal project and template source remain private.
 
-**[Download the preview APK](https://github.com/ibrews/uoxr-demo/releases/tag/preview-2026-10-12)**
+**[Download the preview APK](https://github.com/ibrews/uoxr-demo/releases/tag/preview-2026-10-18)**
 · [Project page and simulator videos](https://alexcoulombepresents.com/lab/ultimate-openxr-template)
 
 ![The tutorial gallery](media/gallery-preview.jpg)
 
 ## Quickstart
 
-1. Download `UOXR-Preview-Android-build3.apk` from the release assets.
+1. Download `UOXR-Android-VR-Preview-build10-2026-10-18.apk` from the release assets.
 2. Enable your headset's developer mode and install with its sideloading tool.
-   If you use Android platform tools: `adb install -r UOXR-Preview-Android-build3.apk`.
+   If you use Android platform tools: `adb install -r UOXR-Android-VR-Preview-build10-2026-10-18.apk`.
 3. Launch **UOXR Template** from your headset's applications/unknown-sources list.
    The separate application ID, `com.alexcoulombepresents.uoxrdemo`, preserves
    existing UOXR Template installations.
@@ -22,7 +22,7 @@ notes. The Unreal project and template source remain private.
    Keyboard: **Tab**. Gamepad: **Start**.
 
 This is a development-signed evaluation preview for Android OpenXR headsets, using
-arm64, Vulkan and ASTC, with Android 12L/API 32 or newer required for build 3.
+arm64, Vulkan and ASTC, with Android 12L/API 32 or newer required for build10.
 It is not a phone app or a store-certified release. An APK
 cannot run on PCVR or Apple Vision Pro. Compatibility on untested headsets remains
 unknown; include your model and OS version when reporting a problem.
@@ -35,8 +35,9 @@ unknown; include your model and OS version when reporting a problem.
    and clears at rest or while the menu is open.
 3. Choose **Power puzzle** at the bottom of settings. Put the teal power cell in
    its socket, pass through the door and power the machine with the amber cell.
-4. Visit **Grab lab** and **Door lab** from the same menu. Lift a coral reset cube
-   to repeat an exercise. Selecting a room restarts it; comfort settings persist.
+4. Visit **Grab lab** and **Door lab** from the same menu. Lift a coral reset ball
+   about a handspan and release to retry; watch for the armed prompt. Task cubes
+   remain separate props. Selecting a room restarts it; comfort settings persist.
 5. Swap between tracked hands and controllers. Core uses joint-based hand visuals;
    optional runtime mesh-hand plugins are not included in this preview.
 
@@ -50,19 +51,25 @@ All start with 4x MSAA. Shadow budgets vary by profile. These are starting prese
 not continuous thermal/FPS adaptation or frame-rate guarantees. ASW is off by
 default; earlier experimental headset results do not certify this APK.
 
-Before packaging, the source passed tutorial 17, Workshop 18, hand-menu 18 and
-profile-selection 12 checks. xrsim with Meta XR Simulator 207 also drove hand
-pinches through all four map destinations. Stereo captures exercised 80%/2x MSAA,
-85%/4x and 100%/4x quality budgets. Simulator checks establish rendering and input
-behavior on the host, not standalone headset performance. Exact-APK checks and
-known limitations are listed in each release.
+Build10 repairs joint-only hand grip, controller flight descent, menu focus and
+pointer ownership. Native simulated controller42, hand grip16/menu21, Slate
+gamepad9, Windows keyboard/mouse17, lab interactions32, reset contracts68 and
+profile contracts13 pass across the documented candidate progression. Native
+and desktop reports retain their tested source revisions.
 
-Build 3's exact APK was installed by SHA-256 and rendered the Tutorial in PICO
-Emulator 0.13; its installed bytes were pulled and matched independently. Fresh
-native simulator tests passed controller/hand switching 7/7, controller models 7/7
-and hand-menu 18/18. Controller grips completed the labs and the full power puzzle.
-Physical fit, stereo comfort and sustained headset performance remain pending.
+The exact installed build10 APK passes16 cold Android OS virtual-gamepad checks,
+including D-pad/A menu selection and both flight directions. Separate actual-window
+footage shows readable menus and a clear gallery after closing in PICO Emulator0.13.
+Its emulator-only profile enables OpenXR layer emulation automatically, retaining
+Vulkan and existing physical-device profiles. See the release for proof and hashes.
+The emulator logs a Vulkan PSO-cache-save warning. Simulated input does not certify
+physical controllers or tracking quality; physical fit, haptics, stereo comfort
+and sustained headset performance remain pending. Packaging reuses the maintainer's
+accepted launcher and does not prove clean-buyer compiler-free packaging.
 **VIVE Focus3/API29 is not supported by this API32 APK.**
+
+The [earlier build3 preview](https://github.com/ibrews/uoxr-demo/releases/tag/preview-2026-10-12)
+and its original evidence remain available.
 
 ## Full feature trailer — 1m 52s
 
@@ -80,10 +87,10 @@ shot, recorded at normal speed with simulator labels and window chrome visible.
 ![Lift and release the coral reset ball](media/reset-ball.gif)
 ![Power the workshop machine](media/power-workshop.gif)
 
-This is footage from the latest QA work, including newer reset balls and input
-repairs. The Android download above remains the earlier **build 3** preview while
-the new candidate completes QA. These recordings do not certify physical-headset
-compatibility or sustained mobile performance. Source remains private.
+This is footage from the QA progression, including reset balls and input repairs.
+Per-shot provenance is retained; not every shot comes from the final build10 APK.
+These recordings do not certify physical-headset compatibility or sustained mobile
+performance. Source remains private.
 
 ## Earlier 59-second walkthrough
 
